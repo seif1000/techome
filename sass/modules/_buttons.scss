@@ -1,0 +1,9 @@
+.navbar-btn{
+    @include add-border(1px,$main-color,all);
+    @include border-raduis(3px);
+   
+}
+.navbar-btn:hover{
+    @include background($main-color);
+}
+

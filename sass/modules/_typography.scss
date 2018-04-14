@@ -1,0 +1,26 @@
+h1,h2,h3,h4,h5,h6{
+    color: $main-color;
+    
+}
+.section-carosal{
+
+.fa{
+    font-size: 22px;
+    margin-left: 10px;
+    padding: 10px;
+    @include add-border(1px, #808080,all);
+    background:  #808080;
+    color: white;
+    @include border-raduis(50%);
+    text-align: center;
+}
+.fa-facebook{
+   @extend .fa ;
+   padding: 10px 15px ;
+
+}
+.fa-pinterest-p{
+    padding: 10px 13px 10px 13px;
+}
+}
+

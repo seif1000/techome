@@ -1,0 +1,150 @@
+
+section{
+    margin: 0;
+    padding: 0;
+}
+.section-showcase{
+  min-height:450px ;
+  background: url("img/showcase.jpg") no-repeat  top right;
+  background-size: cover;
+  @include add-border(4px,$main-color,bottom);
+  .left{
+    text-align: center;
+    padding-top:40px;
+
+
+
+   
+      p{
+           color:#fff ;
+           font-size: 21px;
+           font-weight: bold;
+       }
+      
+    }
+       .right{
+        padding-left: 70px;
+        padding-top:50px;
+    }
+        
+    
+
+    .btn{
+        @include background($main-color);
+    }
+    small{
+        color: #fff;
+    }
+}
+.section-light{
+    text-align: center;
+    span{
+        margin-bottom: 10px;
+    }
+    .col-md-8{
+    @include add-border(2px,$dark-color,bottom);
+    }
+
+    p{
+        font-size: 20px;
+    }
+
+}
+.section-dark{
+    
+    padding: 28px;
+    text-align: center;
+    margin:20px 20px 0 20px;
+    opacity: 0.8;
+    @include border-raduis(4px);
+    p{
+        font-size: 20px;
+    }
+    
+    
+
+}
+.section-carosal{
+   
+   margin-top:20px;
+   padding-top: 30px;
+   padding-bottom: 20px;
+
+   @include background($dark-color);
+    
+    H1{
+        color: #fff;
+    }
+    img{
+        width: 100%;
+        max-height: 320px;
+    }
+    #myCarousel{
+        @include border-raduis(6px);
+        @include add-border(1px,black,all);
+    }
+   
+}
+.section-last{
+    text-align: center;
+    margin-top: 50px;
+    .block{
+        background: $dark-color;
+        text-align: center;
+        max-height:450px;
+        padding-top: 2em;
+        padding-bottom: 2em;
+        box-shadow: 2px 2px 5px #939393;
+        img{
+            width: 75%;
+            max-height: 200px ;
+            
+        }
+    }
+    
+    
+
+}
+.section-search{
+    @include background($main-color);
+    min-height: 350px;
+    padding-top: 40px;
+    h4{
+        color: white;
+    }
+    p{
+        font-size: 20px;
+    }
+    .btn{
+        padding: 20px;
+        border: none;
+        background: #197519;
+    }
+    .fa{
+        font-size: 18px;
+    }
+    
+}
+.section-A{
+    margin-top: 40px;
+    p{
+        color: #333 !important;
+        
+    }
+    .row{
+        background: #fff !important;
+        box-shadow: 2px 2px 1px 1px #cbcbcb;
+        padding: 16px;
+        @include border-raduis(6px);
+    }
+    .fa{
+        font-size: 40px;
+       padding-top:20px;
+       padding-left: 20px; 
+       color: $main-color;
+    }
+    a{
+        color: $main-color;
+    }
+   
+}

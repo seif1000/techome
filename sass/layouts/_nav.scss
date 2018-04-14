@@ -1,0 +1,27 @@
+
+.navbar{
+    @include border-raduis(0px);
+    background-color: $primary-color;
+    min-height: 40px;
+    @include add-border(2px,$main-color,bottom);
+    @include add-border(0px,$primary-color,top);
+    @include add-border(0px,$primary-color,right);
+    @include add-border(0px,$primary-color,left);
+    padding: 16px !important;
+    margin: 0;
+    .navbar-brand{
+        color: $main-color;
+        font-size:22px;
+    }
+    a{
+        
+       margin-right: 15px !important;
+    }
+}
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus,
+.navbar-inverse .navbar-nav > li > .active
+  {
+	background:$main-color !important;
+	color:#fff !important;
+}
